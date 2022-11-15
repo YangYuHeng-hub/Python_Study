@@ -40,7 +40,7 @@ print(t3.count('a'))
 
 # tuple.index(元素，start,end),从start到end [start,end) ,找返回第一个元素值的下标
 # 注意：当index没有找到元素时，会报错
-print(t3.index('a', 1))
+print(t3.index('a', 0))
 
 '''
 支持：
@@ -48,3 +48,20 @@ len
 in,not in
 for...in
 '''
+
+if 'c' in t3:
+    print('c在')
+else:
+    print('c不在')
+
+for i in t3:
+    print(i)
+
+# list(tuple) ---> 元组转列表
+# tuple(list) ---> 列表转元组
+t3 = list(t3)
+print(t3)
+t3.append('x')
+print(t3)
+t3 = tuple(t3)
+print(t3)
